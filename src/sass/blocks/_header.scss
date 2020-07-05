@@ -1,3 +1,14 @@
 .header {
   position: relative;
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    @include desktop {
+      margin-right: 60px;
+    }
+  }
 }

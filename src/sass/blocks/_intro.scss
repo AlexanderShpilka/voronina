@@ -5,7 +5,12 @@
   @include tablet {
     max-width: 310px;
     padding-top: 250px;
-    color: #000;
+    color: $text-color-primary;
+  }
+
+  @include desktop {
+    max-width: 430px;
+    padding-top: 210px;
   }
 
   &__title {
@@ -14,6 +19,10 @@
     @include tablet {
       padding: 30px 0 25px;
       font-size: 36px;
+    }
+
+    @include desktop {
+      font-size: 48px;
     }
   }
 
@@ -25,6 +34,12 @@
     @include tablet {
       padding: 10px 55px 25px 0;
       font-size: 16px;
+      color: rgba($text-color-primary-rgb, 0.6);
+    }
+
+    @include desktop {
+      padding-right: 145px;
+      font-size: 18px;
     }
   }
 

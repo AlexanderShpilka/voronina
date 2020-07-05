@@ -20,6 +20,10 @@
     align-items: flex-start;
   }
 
+  @include desktop {
+    display: none;
+  }
+
   &__line {
     display: block;
     height: 2px;

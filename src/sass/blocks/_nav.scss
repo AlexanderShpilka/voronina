@@ -9,10 +9,6 @@
   width: 0;
   height: 100vh;
   background-color: #fff;
-  background-image: url('../img/leaf-1.png'), url('../img/leaf-2.png');
-  background-position: top 95px right 205px, left 105px bottom 175px;
-  background-size: 28px 24px, 46px 46px;
-  background-repeat: no-repeat;
   opacity: 0;
   // transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.3s;
@@ -22,8 +18,32 @@
     opacity: 1;
   }
 
+  @include tablet {
+    background-image: url('../img/leaf-1.png'), url('../img/leaf-2.png');
+    background-position: top 95px right 205px, left 105px bottom 175px;
+    background-size: 28px 24px, 46px 46px;
+    background-repeat: no-repeat;
+  }
+
+  @include desktop {
+    position: static;
+    z-index: auto;
+    top: auto;
+    left: auto;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    opacity: 1;
+  }
+
   &__list {
     text-align: center;
+
+    @include desktop {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -31,6 +51,18 @@
 
     @include tablet {
       margin-bottom: 30px;
+    }
+
+    @include desktop {
+      margin-right: 20px;
+      margin-bottom: 0;
+      margin-left: 20px;
+    }
+
+    &--portfolio {
+      @include desktop {
+        display: none;
+      }
     }
   }
 
@@ -45,6 +77,14 @@
     @include tablet {
       font-size: 36px;
       border-bottom-width: 6px;
+    }
+
+    @include desktop {
+      display: inline;
+      border-bottom: none;
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba($text-color-primary-rgb, 0.6);
     }
   }
 }

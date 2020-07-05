@@ -9,6 +9,10 @@
   border: none;
   background-color: transparent;
 
+  @include desktop {
+    display: none;
+  }
+
   &::before,
   &::after {
     content: '';
