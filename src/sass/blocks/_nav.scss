@@ -9,6 +9,10 @@
   width: 0;
   height: 100vh;
   background-color: #fff;
+  background-image: url('../img/leaf-1.png'), url('../img/leaf-2.png');
+  background-position: top 95px right 205px, left 105px bottom 175px;
+  background-size: 28px 24px, 46px 46px;
+  background-repeat: no-repeat;
   opacity: 0;
   // transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.3s;
@@ -22,13 +26,25 @@
     text-align: center;
   }
 
+  &__item {
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
   &__link {
     display: inline-block;
     padding-bottom: 5px;
-    margin-bottom: 20px;
     border-bottom: 3px solid $green;
     font-size: 22px;
     font-weight: 600;
     color: $text-color-primary;
+
+    @include tablet {
+      font-size: 36px;
+      border-bottom-width: 6px;
+    }
   }
 }

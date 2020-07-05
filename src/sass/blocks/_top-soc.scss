@@ -1,0 +1,15 @@
+.top-soc {
+  display: none;
+
+  @include tablet {
+    display: block;
+    opacity: 0.4;
+  }
+
+  &__link {
+    font-size: 12px;
+    font-weight: 300;
+    color: $text-color-primary;
+    text-transform: uppercase;
+  }
+}

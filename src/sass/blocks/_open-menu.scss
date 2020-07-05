@@ -13,10 +13,21 @@
   cursor: pointer;
   outline: none;
 
+  @include tablet {
+    top: 23px;
+    left: 315px;
+    right: auto;
+    align-items: flex-start;
+  }
+
   &__line {
     display: block;
     height: 2px;
     background-color: #fff;
+
+    @include tablet {
+      background-color: #000;
+    }
   }
 
   &__line-1 {
