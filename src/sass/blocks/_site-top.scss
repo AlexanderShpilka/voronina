@@ -1,0 +1,11 @@
+.site-top {
+  min-height: 480px;
+  background-image: url('../img/hero@1x.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url('../img/hero@2x.jpg');
+    background-size: 320px 480px;
+  }
+}

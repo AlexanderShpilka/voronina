@@ -1,7 +1,8 @@
-// define your container properties here
+// define your site level wrapper properties here
 .wrapper {
   width: 320px;
   margin: 0 auto;
+  background-color: #fff;
 
   @include tablet {
     width: $tablet-width;

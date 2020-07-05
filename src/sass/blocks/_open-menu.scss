@@ -1,0 +1,30 @@
+.open-menu {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 33px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &__line {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  &__line-1 {
+    width: 100%;
+  }
+
+  &__line-2,
+  &__line-3 {
+    width: 60%;
+  }
+}

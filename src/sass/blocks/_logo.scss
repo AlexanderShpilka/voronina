@@ -1,0 +1,15 @@
+.logo {
+  &__img {
+    display: block;
+
+    @include tablet {
+      width: 201px;
+      height: 60px;
+    }
+
+    @include desktop {
+      width: 254px;
+      height: 76px;
+    }
+  }
+}
