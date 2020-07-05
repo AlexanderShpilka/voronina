@@ -1,0 +1,26 @@
+.work-item {
+  padding-bottom: 50px;
+
+  &__picture {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__hashtag {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba($text-color-primary-rgb, 0.6);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    padding: 5px 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-color-secondary;
+  }
+}

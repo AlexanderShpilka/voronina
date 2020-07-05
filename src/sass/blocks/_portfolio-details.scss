@@ -1,0 +1,59 @@
+.portfolio-details {
+  display: flex;
+  align-items: center;
+  min-height: 388px;
+  background-image: url('../img/work-details-bg-mobile@1x.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url('../img/work-details-bg-mobile@2x.png');
+    background-size: 320px 388px;
+  }
+
+  &__content {
+    padding: 0 40px;
+    color: #fff;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__text {
+    padding: 5px 15px 20px 0;
+    font-size: 14px;
+  }
+
+  &__download {
+    display: inline-block;
+    padding-right: 40px;
+    background-image: url('../img/icon-pdf.png');
+    background-size: 24px 27px;
+    background-position: bottom 0 right 0;
+    background-repeat: no-repeat;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px 6px 0;
+    border-bottom: 2px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: 0;
+      display: block;
+      width: 27px;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+}
