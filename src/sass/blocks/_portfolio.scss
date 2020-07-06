@@ -1,0 +1,10 @@
+.portfolio {
+  @include tablet {
+    padding-bottom: 135px;
+    background-image: url('../img/leaf-1.png'), url('../img/leaf-2.png'),
+      url('../img/leaf-3.png'), url('../img/leaf-4.png');
+    background-repeat: no-repeat;
+    background-position: top 107px right 257px, top 255px right 28px,
+      top 151px left 5px, bottom 10px right 5px;
+  }
+}

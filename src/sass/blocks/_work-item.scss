@@ -8,6 +8,7 @@
 
   &__image {
     display: block;
+    max-width: none;
   }
 
   &__hashtag {
@@ -22,5 +23,9 @@
     font-size: 18px;
     font-weight: 700;
     color: $text-color-secondary;
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 }

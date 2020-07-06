@@ -1,6 +1,10 @@
 .section {
   padding: 40px 0;
 
+  @include tablet {
+    padding: 75px 0;
+  }
+
   &__title {
     position: relative;
     padding: 55px 0 45px;
@@ -9,6 +13,11 @@
     color: $text-color-primary;
     text-transform: uppercase;
     text-align: center;
+
+    @include tablet {
+      font-size: 24px;
+      padding: 100px 0 60px;
+    }
 
     &::before {
       content: '';
@@ -20,6 +29,10 @@
       height: 30px;
       background-color: $title-stick-color;
       transform: translateX(-50%);
+
+      @include tablet {
+        height: 40px;
+      }
     }
   }
 }

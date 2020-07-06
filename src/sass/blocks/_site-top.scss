@@ -13,6 +13,7 @@
 
   @include tablet {
     min-height: 823px;
+    margin-bottom: 75px;
     background-image: url('../img/hero-tablet@1x.jpg'),
       url('../img/site-top-bg-tablet@1x.jpg');
     background-position: top 162px right 51px, top 0 right 0;

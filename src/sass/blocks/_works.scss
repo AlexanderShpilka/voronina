@@ -1,0 +1,28 @@
+.works {
+  @include tablet {
+    display: flex;
+  }
+
+  &__box {
+    @include tablet {
+    }
+  }
+
+  &__box-1 {
+    @include tablet {
+      margin-top: 100px;
+    }
+  }
+
+  &__box-2 {
+    @include tablet {
+      margin: 0 18px;
+    }
+  }
+
+  &__box-3 {
+    @include tablet {
+      margin-top: 115px;
+    }
+  }
+}

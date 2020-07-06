@@ -11,20 +11,47 @@
     background-size: 320px 388px;
   }
 
+  @include tablet {
+    min-height: 371px;
+    margin-top: 40px;
+    background-image: url('../img/work-details-bg-tablet@1x.png');
+
+    @include retina {
+      background-image: url('../img/work-details-bg-tablet@2x.png');
+      background-size: 702px 371px;
+    }
+  }
+
   &__content {
     padding: 0 40px;
     color: #fff;
+
+    @include tablet {
+      flex-grow: 1;
+      padding-right: 220px;
+      padding-bottom: 10px;
+      padding-left: 285px;
+      color: $text-color-primary;
+    }
   }
 
   &__title {
     padding-bottom: 10px;
     font-size: 18px;
     font-weight: 600;
+
+    @include tablet {
+      font-size: 24px;
+    }
   }
 
   &__text {
     padding: 5px 15px 20px 0;
     font-size: 14px;
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 
   &__download {
@@ -45,6 +72,13 @@
     color: #fff;
     text-transform: uppercase;
 
+    @include tablet {
+      font-size: 16px;
+      font-weight: 600;
+      color: $text-color-primary;
+      border-bottom-color: #212121;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -54,6 +88,10 @@
       width: 27px;
       height: 2px;
       background-color: #fff;
+
+      @include tablet {
+        background-color: #212121;
+      }
     }
   }
 }
