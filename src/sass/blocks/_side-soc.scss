@@ -1,0 +1,17 @@
+.side-soc {
+  display: none;
+
+  @include desktop {
+    display: block;
+    color: $pink;
+    transform: rotate(90deg);
+  }
+
+  &__link {
+    @include desktop {
+      font-size: 14px;
+      color: $pink;
+      text-transform: uppercase;
+    }
+  }
+}

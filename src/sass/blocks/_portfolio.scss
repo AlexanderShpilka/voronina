@@ -7,4 +7,24 @@
     background-position: top 107px right 257px, top 255px right 28px,
       top 151px left 5px, bottom 10px right 5px;
   }
+
+  @include desktop {
+    position: relative;
+    background-position: top 125px right 502px, top 280px right 125px,
+      top 175px left 96px, bottom 360px right 138px;
+  }
+
+  &__position {
+    position: absolute;
+    top: calc(50% - 225px);
+    left: 35px;
+    transform: translateY(-50%);
+  }
+
+  &__side-soc {
+    position: absolute;
+    top: calc(50% - 250px);
+    right: -35px;
+    transform: translateY(-50%);
+  }
 }

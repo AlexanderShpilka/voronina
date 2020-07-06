@@ -22,6 +22,17 @@
     }
   }
 
+  @include desktop {
+    min-height: 506px;
+    margin-top: 40px;
+    background-image: url('../img/work-details-bg-desktop@1x.png');
+
+    @include retina {
+      background-image: url('../img/work-details-bg-desktop@2x.png');
+      background-size: 1128px 506px;
+    }
+  }
+
   &__content {
     padding: 0 40px;
     color: #fff;
@@ -32,6 +43,12 @@
       padding-bottom: 10px;
       padding-left: 285px;
       color: $text-color-primary;
+    }
+
+    @include desktop {
+      padding-right: 510px;
+      padding-bottom: 30px;
+      padding-left: 645px;
     }
   }
 
@@ -51,6 +68,10 @@
 
     @include tablet {
       font-size: 16px;
+    }
+
+    @include desktop {
+      font-size: 18px;
     }
   }
 
@@ -77,6 +98,10 @@
       font-weight: 600;
       color: $text-color-primary;
       border-bottom-color: #212121;
+    }
+
+    @include desktop {
+      font-size: 18px;
     }
 
     &::after {

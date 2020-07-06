@@ -19,6 +19,11 @@
       padding: 100px 0 60px;
     }
 
+    @include desktop {
+      font-size: 36px;
+      padding: 130px 0 90px;
+    }
+
     &::before {
       content: '';
       position: absolute;

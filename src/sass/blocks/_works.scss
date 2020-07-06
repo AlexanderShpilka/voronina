@@ -12,17 +12,29 @@
     @include tablet {
       margin-top: 100px;
     }
+
+    @include desktop {
+      margin-top: 170px;
+    }
   }
 
   &__box-2 {
     @include tablet {
       margin: 0 18px;
     }
+
+    @include desktop {
+      margin: 0 29px;
+    }
   }
 
   &__box-3 {
     @include tablet {
       margin-top: 115px;
+    }
+
+    @include desktop {
+      margin-top: 200px;
     }
   }
 }
