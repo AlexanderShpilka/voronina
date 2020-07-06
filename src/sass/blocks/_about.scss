@@ -20,6 +20,19 @@
     }
   }
 
+  @include desktop {
+    position: relative;
+    background-image: url('../img/leaf-5.png'),
+      url('../img/about-bg-desktop@1x.png');
+    background-position: top 90px left 16px, top 295px left 0;
+
+    @include retina {
+      background-image: url('../img/leaf-5.png'),
+        url('../img/about-bg-desktop@2x.png');
+      background-size: 97px 62px, 1273px 611px;
+    }
+  }
+
   &__content {
     padding-top: 360px;
     font-size: 16px;
@@ -29,6 +42,15 @@
     @include tablet {
       display: flex;
       padding-top: 420px;
+    }
+
+    @include desktop {
+      display: block;
+      padding-top: 115px;
+      padding-right: 70px;
+      padding-bottom: 100px;
+      padding-left: 710px;
+      font-size: 18px;
     }
   }
 
@@ -41,10 +63,19 @@
       text-align: left;
     }
 
+    @include desktop {
+      width: auto;
+    }
+
     &--right {
       @include tablet {
         padding-top: 63px;
         padding-left: 13px;
+      }
+
+      @include desktop {
+        padding-top: 0;
+        padding-left: 0;
       }
     }
   }
@@ -73,6 +104,10 @@
     font-weight: 600;
     text-transform: uppercase;
 
+    @include desktop {
+      padding-top: 20px;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -83,5 +118,19 @@
       height: 2px;
       background-color: #1c1c1c;
     }
+  }
+
+  &__position {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+  }
+
+  &__side-soc {
+    position: absolute;
+    top: 50%;
+    right: -35px;
+    transform: translateY(-50%) rotate(90deg);
   }
 }
