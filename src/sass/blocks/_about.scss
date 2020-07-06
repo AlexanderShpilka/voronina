@@ -8,15 +8,45 @@
     background-size: 320px 342px;
   }
 
+  @include tablet {
+    background-image: url('../img/leaf-5.png'),
+      url('../img/about-bg-tablet@1x.png');
+    background-position: top 118px left 16px, top 265px left 0;
+
+    @include retina {
+      background-image: url('../img/leaf-5.png'),
+        url('../img/about-bg-tablet@2x.png');
+      background-size: 97px 62px, 764px 465px;
+    }
+  }
+
   &__content {
     padding-top: 360px;
     font-size: 16px;
     color: $text-color-secondary;
     text-align: center;
+
+    @include tablet {
+      display: flex;
+      padding-top: 420px;
+    }
   }
 
   &__box {
     padding: 5px 0;
+
+    @include tablet {
+      width: 50%;
+      padding-right: 20px;
+      text-align: left;
+    }
+
+    &--right {
+      @include tablet {
+        padding-top: 63px;
+        padding-left: 13px;
+      }
+    }
   }
 
   &__text {
