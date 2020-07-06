@@ -1,0 +1,57 @@
+.about {
+  background-image: url('../img/about-bg-mobile@1x.png');
+  background-position: top 167px left 0;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url('../img/about-bg-mobile@2x.png');
+    background-size: 320px 342px;
+  }
+
+  &__content {
+    padding-top: 360px;
+    font-size: 16px;
+    color: $text-color-secondary;
+    text-align: center;
+  }
+
+  &__box {
+    padding: 5px 0;
+  }
+
+  &__text {
+    padding: 10px 0;
+
+    &--desktop {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+  }
+
+  &__contacts {
+    padding-bottom: 15px;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px 6px 0;
+    border-bottom: 2px solid #1c1c1c;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 18px;
+      right: 0;
+      display: block;
+      width: 27px;
+      height: 2px;
+      background-color: #1c1c1c;
+    }
+  }
+}
