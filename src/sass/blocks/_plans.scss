@@ -1,2 +1,18 @@
 .plans {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-1 {
+    margin-top: 100px;
+  }
+
+  &__item-2 {
+    margin: 0 17px;
+  }
+
+  &__item-3 {
+    margin-top: 115px;
+  }
 }
