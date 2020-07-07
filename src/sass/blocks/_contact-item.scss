@@ -4,6 +4,10 @@
 
   &__text {
     color: #4e4e4e;
+
+    @include tablet {
+      font-size: 18px;
+    }
   }
 
   &__slash {
@@ -12,9 +16,18 @@
     font-size: 20px;
     font-weight: 700;
     color: $green;
+
+    @include tablet {
+      font-size: 22px;
+      padding: 0 10px;
+    }
   }
 
   &__link {
     color: #4e4e4e;
+
+    @include tablet {
+      font-size: 18px;
+    }
   }
 }
