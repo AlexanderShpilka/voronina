@@ -16,5 +16,10 @@
     bottom: auto;
     margin-left: 240px;
     color: rgba($text-color-primary-rgb, 0.6);
+    transition: 0.2s;
+
+    &:hover {
+      color: $green;
+    }
   }
 }

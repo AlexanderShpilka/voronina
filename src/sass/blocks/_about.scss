@@ -106,6 +106,16 @@
 
     @include desktop {
       padding-top: 20px;
+      transition: 0.2s;
+
+      &:hover {
+        color: $green;
+        border-bottom-color: $green;
+
+        &::after {
+          background-color: $green;
+        }
+      }
     }
 
     &::after {
@@ -117,6 +127,10 @@
       width: 27px;
       height: 2px;
       background-color: #1c1c1c;
+
+      @include desktop {
+        transition: 0.2s;
+      }
     }
   }
 

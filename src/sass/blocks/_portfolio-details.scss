@@ -102,6 +102,16 @@
 
     @include desktop {
       font-size: 18px;
+      transition: 0.2s;
+
+      &:hover {
+        color: $green;
+        border-bottom-color: $green;
+
+        &::after {
+          background-color: $green;
+        }
+      }
     }
 
     &::after {
@@ -116,6 +126,10 @@
 
       @include tablet {
         background-color: #212121;
+      }
+
+      @include desktop {
+        transition: 0.2s;
       }
     }
   }

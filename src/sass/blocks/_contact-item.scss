@@ -36,6 +36,11 @@
 
     @include desktop {
       font-size: 20px;
+      transition: 0.2s;
+
+      &:hover {
+        color: $green;
+      }
     }
   }
 }

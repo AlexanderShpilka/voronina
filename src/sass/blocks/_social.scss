@@ -15,7 +15,23 @@
     }
   }
 
+  &__link {
+    @include tablet {
+      transition: 0.2s;
+    }
+
+    @include desktop {
+      display: block;
+
+      &:hover {
+        background-color: $green;
+      }
+    }
+  }
+
   &__img {
+    display: block;
+
     @include tablet {
       width: 34px;
       height: 34px;
