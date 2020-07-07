@@ -8,15 +8,15 @@
 
   @include desktop {
     position: relative;
-    background-image: url('../img/leaf-4.png'), url('../img/leaf-2.png'),
+    background-image: url('../img/leaf-2.png'), url('../img/leaf-2.png'),
       url('../img/leaf-1.png'), url('../img/price-bg-desktop@1x.png');
     background-position: bottom 0 right 130px, top 175px left 130px,
       top 25px right 506px, top 570px left 0;
-    background-size: 65px 53px, 46px 46px, 28px 24px, 1440px 441px;
+    background-size: 46px 46px, 46px 46px, 28px 24px, 1440px 441px;
     background-repeat: no-repeat;
 
     @include retina {
-      background-image: url('../img/leaf-4.png'), url('../img/leaf-2.png'),
+      background-image: url('../img/leaf-2.png'), url('../img/leaf-2.png'),
         url('../img/leaf-1.png'), url('../img/price-bg-desktop@2x.png');
       background-size: 1440px 441px;
     }

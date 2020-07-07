@@ -9,27 +9,27 @@
   }
 
   @include tablet {
-    background-image: url('../img/leaf-5.png'),
+    background-image: url('../img/leaf-2.png'),
       url('../img/about-bg-tablet@1x.png');
-    background-position: top 118px left 16px, top 265px left 0;
+    background-position: top 118px left 36px, top 265px left 0;
 
     @include retina {
-      background-image: url('../img/leaf-5.png'),
+      background-image: url('../img/leaf-2.png'),
         url('../img/about-bg-tablet@2x.png');
-      background-size: 97px 62px, 764px 465px;
+      background-size: 46px 46px, 764px 465px;
     }
   }
 
   @include desktop {
     position: relative;
-    background-image: url('../img/leaf-5.png'),
+    background-image: url('../img/leaf-2.png'),
       url('../img/about-bg-desktop@1x.png');
-    background-position: top 90px left 16px, top 295px left 0;
+    background-position: top 90px left 36px, top 295px left 0;
 
     @include retina {
-      background-image: url('../img/leaf-5.png'),
+      background-image: url('../img/leaf-2.png'),
         url('../img/about-bg-desktop@2x.png');
-      background-size: 97px 62px, 1273px 611px;
+      background-size: 46px 46px, 1273px 611px;
     }
   }
 
