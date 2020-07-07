@@ -1,6 +1,10 @@
 .plan-item {
   padding-bottom: 70px;
 
+  @include tablet {
+    padding-bottom: 0;
+  }
+
   &--last {
     padding-bottom: 0;
   }
