@@ -125,10 +125,12 @@
       background-color: #fff;
 
       @include tablet {
+        top: 22px;
         background-color: #212121;
       }
 
       @include desktop {
+        top: 24px;
         transition: 0.2s;
       }
     }

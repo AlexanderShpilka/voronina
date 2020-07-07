@@ -129,6 +129,7 @@
       background-color: #1c1c1c;
 
       @include desktop {
+        top: 29px;
         transition: 0.2s;
       }
     }
