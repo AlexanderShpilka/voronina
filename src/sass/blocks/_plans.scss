@@ -5,14 +5,28 @@
   }
 
   &__item-1 {
-    margin-top: 100px;
+    @include tablet {
+      margin-top: 100px;
+    }
+
+    @include desktop {
+      margin-top: 173px;
+    }
   }
 
   &__item-2 {
-    margin: 0 17px;
+    @include tablet {
+      margin: 0 17px;
+    }
   }
 
   &__item-3 {
-    margin-top: 115px;
+    @include tablet {
+      margin-top: 115px;
+    }
+
+    @include desktop {
+      margin-top: 200px;
+    }
   }
 }
