@@ -8,6 +8,10 @@
     @include tablet {
       font-size: 18px;
     }
+
+    @include desktop {
+      font-size: 20px;
+    }
   }
 
   &__slash {
@@ -28,6 +32,10 @@
 
     @include tablet {
       font-size: 18px;
+    }
+
+    @include desktop {
+      font-size: 20px;
     }
   }
 }

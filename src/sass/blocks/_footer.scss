@@ -5,4 +5,9 @@
     background-size: 28px 24px, 65px 53px;
     background-position: top 50% left 36px, top 0 right 30px;
   }
+
+  @include desktop {
+    background-image: url('../img/leaf-1.png');
+    background-position: top 200px left 36px;
+  }
 }

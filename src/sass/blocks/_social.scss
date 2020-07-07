@@ -3,8 +3,16 @@
   justify-content: center;
   padding-top: 30px;
 
+  @include desktop {
+    padding-top: 50px;
+  }
+
   &__item {
     margin: 0 13px;
+
+    @include desktop {
+      margin: 0 15px;
+    }
   }
 
   &__img {
