@@ -13,9 +13,8 @@ body {
   min-width: 320px;
   margin: 0;
   font-family: source-serif-pro, serif;
-  background-color: #282828;
-
-  // background-color: #eee; // try it
+  background-image: url('../img/site-bg.jpg');
+  background-repeat: repeat;
 }
 
 a {

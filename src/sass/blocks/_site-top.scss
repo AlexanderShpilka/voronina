@@ -2,12 +2,13 @@
   min-height: 480px;
   margin-bottom: 40px;
   background-color: #f8f8f8;
-  background-image: url('../img/hero-mobile@1x.jpg');
+  background-image: url('../img/hero-mobile@1x.jpg'), url('../img/site-bg.jpg');
   background-position: 0 0;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat;
 
   @include retina {
-    background-image: url('../img/hero-mobile@2x.jpg');
+    background-image: url('../img/hero-mobile@2x.jpg'),
+      url('../img/site-bg.jpg');
     background-size: 320px 480px;
   }
 
@@ -15,13 +16,13 @@
     min-height: 823px;
     margin-bottom: 75px;
     background-image: url('../img/hero-tablet@1x.jpg'),
-      url('../img/site-top-bg-tablet@1x.jpg');
+      url('../img/site-top-bg-tablet@1x.jpg'), url('../img/site-bg.jpg');
     background-position: top 162px right 51px, top 0 right 0;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat, repeat;
 
     @include retina {
       background-image: url('../img/hero-tablet@2x.jpg'),
-        url('../img/site-top-bg-tablet@2x.jpg');
+        url('../img/site-top-bg-tablet@2x.jpg'), url('../img/site-bg.jpg');
       background-size: 327px 499px, 308px 823px;
     }
   }
