@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+
+  &__item {
+    margin: 0 13px;
+  }
+
+  &__img {
+    @include tablet {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}

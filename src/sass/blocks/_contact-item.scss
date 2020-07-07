@@ -1,0 +1,20 @@
+.contact-item {
+  padding: 5px 0;
+  text-align: center;
+
+  &__text {
+    color: #4e4e4e;
+  }
+
+  &__slash {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $green;
+  }
+
+  &__link {
+    color: #4e4e4e;
+  }
+}
